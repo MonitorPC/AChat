@@ -47,12 +47,12 @@ if __name__ == '__main__':
         elif choice == '2':
             messages = get_messages()
             for msg in messages:
-                print(f"{msg['timestamp']} - {msg['message']}")
+                print(f"\t{msg['timestamp']} - {msg['message']}")
             input("Enter to continue")
             
         elif choice == '3':
             count = get_message_count()
-            print(f"Total messages: {count}")
+            print(f"\tTotal messages: {count}")
             input("Enter to continue")
             
         elif choice == '4':

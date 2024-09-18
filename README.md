@@ -12,9 +12,9 @@ This application allows users to send anonymous messages and retrieve the total 
 
 ### Starting the Server:
 
-1. **Navigate to the server directory:** 
+1. **Navigate to the src directory:** 
    ```bash
-   cd server
+   cd src
    ```
 2. **Run the server:**
    ```bash
@@ -24,9 +24,9 @@ This application allows users to send anonymous messages and retrieve the total 
 
 ### Using the Client:
 
-1. **Open a terminal or command prompt in the client directory:**
+1. **Open a terminal or command prompt in the src directory:**
    ```bash
-   cd client
+   cd src
    ```
 2. **Run the client:**
    ```bash

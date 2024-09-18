@@ -7,7 +7,6 @@ This application allows users to send anonymous messages and retrieve the total 
 - Python 3.6 or higher
 - Flask 
 - requests
-  install with `pip install -r requirements.txt`
 
 ### Starting the Server:
 

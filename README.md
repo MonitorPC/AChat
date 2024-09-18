@@ -1,12 +1,14 @@
 ## Anonymous Chat Application
 
-This application allows users to send anonymous messages and retrieve the total count of messages.
+This application allows users to send anonymous messages and retrieve the total count of messages. The project also includes fitness functions to assess the quality of the application based on various criteria.
 
 ### Requirements:
 
 - Python 3.6 or higher
 - Flask 
-- requests
+- requests 
+- radon 
+- coverage 
 
 ### Starting the Server:
 
@@ -49,7 +51,20 @@ This application allows users to send anonymous messages and retrieve the total 
 - **GET /messages**: Retrieve all messages.
 - **GET /messages/count**: Get the total message count.
 
+### Fitness Functions:
+
+The project includes fitness functions in the `fitness_functions.py` file to measure the quality of the application according to these criteria:
+
+- **Time Behavior:** Measures the latency of sending and retrieving messages, and retrieving the message count.
+- **Recoverability:** Checks if messages are persisted after a server restart.
+- **Maintainability:** Evaluates code complexity.
+
+**To run the fitness functions:**
+1. Ensure the server (`app.py`) is running.
+2. Execute the command `python fitness.py`.
+
 ### Notes:
 
 - The current implementation stores messages in memory, so they will be lost if the server restarts. For persistent storage, consider using a database.
 - This application is for demonstration purposes only and does not include user authentication or advanced security features. 
+

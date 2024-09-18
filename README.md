@@ -53,7 +53,7 @@ This application allows users to send anonymous messages and retrieve the total 
 
 ### Fitness Functions:
 
-The project includes fitness functions in the `fitness_functions.py` file to measure the quality of the application according to these criteria:
+The project includes fitness functions in the `fitness.py` file to measure the quality of the application according to these criteria:
 
 - **Time Behavior:** Measures the latency of sending and retrieving messages, and retrieving the message count.
 - **Recoverability:** Checks if messages are persisted after a server restart.

@@ -31,12 +31,6 @@ Here are fitness functions to assess the quality of the application based on tim
    - **Ideal:** All messages persist.
    - **Penalty:**  Significant penalty for each lost message.
 
-- **Graceful Degradation under Load:** 
-   - Simulate a large number of concurrent users sending messages (using a load testing tool like Locust).
-   - Monitor error rates and response times.
-   - **Ideal:** Minimal degradation in performance (e.g., response times within an acceptable range even under high load).
-   - **Penalty:**  Increasing penalty for higher error rates or significant increases in response times.
-
 **3. Maintainability:**
 
 - **Code Complexity (Cyclomatic Complexity):** 

@@ -24,7 +24,7 @@ This application allows users to send anonymous messages and retrieve the total 
 
 ### Using the Client:
 
-1. **Open a terminal or command prompt in the src directory:**
+1. **Open a terminal or command prompt**
    ```bash
    cd src
    ```

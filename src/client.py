@@ -40,21 +40,23 @@ if __name__ == '__main__':
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            subprocess.run(["clear"], cwd=".")
             message = input("Enter your message: ")
             send_message(message)
+            
         elif choice == '2':
-            subprocess.run(["clear"], cwd=".")
             messages = get_messages()
             for msg in messages:
                 print(f"{msg['timestamp']} - {msg['message']}")
             input("Enter to continue")
+            
         elif choice == '3':
-            subprocess.run(["clear"], cwd=".")
             count = get_message_count()
             print(f"Total messages: {count}")
             input("Enter to continue")
+            
         elif choice == '4':
             break
+            
         else:
             print("Invalid choice.")
+            input("Enter to continue")

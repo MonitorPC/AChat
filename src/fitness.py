@@ -44,7 +44,7 @@ def measure_count_latency():
 def check_message_persistence(initial_messages):
     """Checks for message persistence after server restart."""
     try:
-        subprocess.run(["python", "app.py"], cwd="server", timeout=5)  # Adjust timeout as needed
+        subprocess.run(["python", "app.py"], cwd=".", timeout=5)  # Adjust timeout as needed
         time.sleep(2)  # Wait for server to start
         response = requests.get(f'{SERVER_URL}/messages')
         if response.status_code == 200:
@@ -83,5 +83,5 @@ if __name__ == "__main__":
     print(f"Message Persistence: {persistence}")
 
     # --- Maintainability --- 
-    complexity = calculate_cyclomatic_complexity("server/app.py")
+    complexity = calculate_cyclomatic_complexity("app.py")
     print(f"Cyclomatic Complexity: {complexity}") 

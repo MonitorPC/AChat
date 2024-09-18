@@ -33,5 +33,3 @@
 - Implement a WebSocket-based solution for real-time message updates.
 - Add error handling and input validation.
 - Create a user interface using HTML, CSS, and JavaScript.
-
-This example provides a basic framework for building the anonymous chat application. You can extend it further to incorporate additional features and improvements based on your specific requirements. 

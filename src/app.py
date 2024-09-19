@@ -33,4 +33,4 @@ def get_message_count():
     return jsonify({'count': count})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
